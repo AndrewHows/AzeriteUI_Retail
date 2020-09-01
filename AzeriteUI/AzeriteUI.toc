@@ -14,14 +14,12 @@
 ## X-Website: https://www.patreon.com/goldpawsstuff
 ## X-License: Custom
 
-# Global templates
-FontStyles.xml
-Templates.xml
 
 # Addon libraries & plugins, the main engine of it all.
 back-end\wheel.lua
 back-end\libraries.xml
 back-end\plugins.xml
+back-end\tools.xml
 
 # Addon localization.
 locale\enUS.lua
