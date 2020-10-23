@@ -12,6 +12,9 @@
 ## X-Website: https://www.patreon.com/goldpawsstuff
 ## X-License: Custom
 
+# Global Fonts
+FontStyles.xml
+
 # Addon libraries & plugins, the main engine of it all.
 back-end\wheel.lua
 back-end\libraries.xml
