@@ -1,4 +1,4 @@
-## Interface: 90001
+## Interface: 90002
 ## Name: AzeriteUI
 ## Title: |c00000002|r|cff7284abA|r|cff6a7a9ez|r|cff617092e|r|cff596785r|r|cff505d78i|r|cff48536bt|r|cff3f495fe|r|cffffffffUI|r |cfffff5693.0|r |cFF770000Alpha|r
 ## Author: Daniel Troko, Lars Norberg
