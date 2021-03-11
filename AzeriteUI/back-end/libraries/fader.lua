@@ -295,6 +295,7 @@ LibFader.CheckMouse = function(self)
 		Data.mouseOver = true 
 		return true
 	end 
+	return false
 --[[	
 	for object in pairs(Objects) do 
 		if (object and not object.ignoreMouse) then
