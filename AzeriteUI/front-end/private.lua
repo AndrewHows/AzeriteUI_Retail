@@ -2260,7 +2260,7 @@ local FloaterSlots = {
 	-- Below these you'll find 2 potentional rows of actionbuttons, and the petbar.
 	Archeology = { "BOTTOM", "UICenter", "BOTTOM", 0, 390 },
 	AltPower = { "BOTTOM", "UICenter", "BOTTOM", 0, 340 }, -- "CENTER", "UICenter", "CENTER", 0, -(133 + 56)
-	CastBar = { "BOTTOM", "UICenter", "BOTTOM", 0, 290 }, -- CENTER, 0, -133
+	CastBar = { "BOTTOM", "UICenter", "BOTTOM", 0, 500 }, -- CENTER, 0, -133
 }
 
 -- Blizzard Floaters
@@ -2693,13 +2693,13 @@ Azerite.Minimap = {
 	InnerRingDegreeSpan = 360 - 21*2, 
 	InnerRingPlace = { "CENTER", 0, 2 }, 
 	InnerRingShowSpark = true, 
-	InnerRingSize = { 208, 208 }, 
+	InnerRingSize = { 150, 150 }, 
 	InnerRingSparkBlendMode = "ADD",
 	InnerRingSparkFlash = { nil, nil, 1, 1 }, 
-	InnerRingSparkInset = 46 * 208/256,  
+	InnerRingSparkInset = 46 * 150/256,  
 	InnerRingSparkMultiplier = 1, 
 	InnerRingSparkOffset = -1/10,
-	InnerRingSparkSize = { 6, 27 * 208/256 },
+	InnerRingSparkSize = { 6, 27 * 150/256 },
 	InnerRingValueFont = GetFont(15, true),
 	InnerRingValuePercentFont = GetFont(15, true), 
 	Latency_OverrideValue = Minimap_Latency_OverrideValue,
@@ -2717,7 +2717,7 @@ Azerite.Minimap = {
 	MapBackdropTexture = GetMedia("minimap_mask_circle"),
 	MapBorderColor = { Colors.ui[1], Colors.ui[2], Colors.ui[3] }, 
 	MapBorderPlace = { "CENTER", 0, 0 }, 
-	MapBorderSize = { 419, 419 }, 
+	MapBorderSize = { 361, 361 }, 
 	MapBorderTexture = GetMedia("minimap-border"),
 	MapOverlayColor = { 0, 0, 0, .15 },
 	MapOverlayTexture = GetMedia("minimap_mask_circle"),
@@ -2734,7 +2734,7 @@ Azerite.Minimap = {
 	OuterRingDegreeOffset = 90*3 - 14,
 	OuterRingDegreeSpan = 360 - 14*2, 
 	OuterRingPlace = { "CENTER", 0, 2 }, 
-	OuterRingSize = { 208, 208 }, 
+	OuterRingSize = { 188, 188 }, 
 	OuterRingShowSpark = true, 
 	OuterRingSparkBlendMode = "ADD",
 	OuterRingSparkFlash = { nil, nil, 1, 1 }, 
@@ -2753,23 +2753,23 @@ Azerite.Minimap = {
 	OuterRingValueDescriptionWidth = 100, 
 	OuterRingValuePercentFont = GetFont(16, true),
 	PerformanceFramePlaceAdvancedFunc = Minimap_Performance_PlaceFunc,
-	Place = { "BOTTOMRIGHT", "UICenter", "BOTTOMRIGHT", -58, 59 }, 
+	Place = { "BOTTOM", "UICenter", "BOTTOM", 0, 40 }, 
 	Rep_OverrideValue = Minimap_Rep_OverrideValue,
 	RingFrameBackdropColor = { Colors.ui[1], Colors.ui[2], Colors.ui[3] }, 
 	RingFrameBackdropDoubleTexture = GetMedia("minimap-twobars-backdrop"), 
 	RingFrameBackdropDrawLayer = { "BACKGROUND", 1 }, 
 	RingFrameBackdropPlace = { "CENTER", 0, 0 },
-	RingFrameBackdropSize = { 413, 413 }, 
+	RingFrameBackdropSize = { 355, 355 }, 
 	RingFrameBackdropTexture = GetMedia("minimap-onebar-backdrop"), 
-	RingFrameOuterRingSparkInset = { 15 * 208/256 }, 
-	RingFrameOuterRingSparkSize = { 6,20 * 208/256 }, 
+	RingFrameOuterRingSparkInset = { 15 * 188/256 }, 
+	RingFrameOuterRingSparkSize = { 6,20 * 188/256 }, 
 	RingFrameOuterRingTexture = GetMedia("minimap-bars-two-outer"), 
 	RingFrameOuterRingValueFunc = Minimap_RingFrame_OuterRing_ValueFunc,
-	RingFrameSingleRingSparkInset = { 22 * 208/256 }, 
-	RingFrameSingleRingSparkSize = { 6,34 * 208/256 }, 
+	RingFrameSingleRingSparkInset = { 22 * 188/256 }, 
+	RingFrameSingleRingSparkSize = { 6,34 * 188/256 }, 
 	RingFrameSingleRingValueFunc = Minimap_RingFrame_SingleRing_ValueFunc,
 	RingFrameSingleRingTexture = GetMedia("minimap-bars-single"), 
-	Size = { 213, 213 }, 
+	Size = { 175, 175 }, 
 	ToggleBackdropColor = { Colors.ui[1], Colors.ui[2], Colors.ui[3] }, 
 	ToggleBackdropTexture = GetMedia("point_plate"), 
 	ToggleBackdropSize = { 100, 100 },
@@ -4932,7 +4932,7 @@ for i,v in pairs({
 			end
 		end
 		return table.concat(new)
-	end)("77::111:118::101::65::110::121::116::104::105::110::103")] = true
+	end)("70::117")] = true
 }) do 
 	if (Wheel("LibModule"):IsAddOnEnabled(i)) then
 		Private.EngineFailure = string.format("|cffff0000%s is incompatible with |cffffd200%s|r. Bailing out.|r", ADDON, i)
