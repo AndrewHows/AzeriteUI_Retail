@@ -295,6 +295,7 @@ LibFader.CheckMouse = function(self)
 		Data.mouseOver = true 
 		return true
 	end 
+--[[	
 	for object in pairs(Objects) do 
 		if (object and not object.ignoreMouse) then
 			if (object.GetExplorerHitRects) then 
@@ -312,6 +313,7 @@ LibFader.CheckMouse = function(self)
 		end
 	end 
 	Data.mouseOver = nil
+]]--	
 end
 
 LibFader.CheckCursor = function(self)
